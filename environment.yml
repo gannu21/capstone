@@ -1,0 +1,19 @@
+name: streamlit_pytorch
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - streamlit
+  - torch
+  - torchvision
+  - pillow
+  - matplotlib
+  - scikit-learn
+  - numpy
+  - pandas
+  - pip
+  - pip:
+    - torch
+    - torchvision
