@@ -143,19 +143,19 @@ def main():
         st.write("""
         ```
         Classification Report:
-                   precision    recall  f1-score   support
-              Normal       0.73      0.87      0.79       234
-           Pneumonia       0.91      0.80      0.85       390
-            accuracy                           0.83       624
-           macro avg       0.82      0.84      0.82       624
-        weighted avg       0.84      0.83      0.83       624
+                        precision  recall  f1-score   support
+              Normal       0.90     0.86    0.88       234
+           Pneumonia       0.92     0.80    0.93       390
+            accuracy                        0.91       624
+           macro avg       0.91     0.90    0.91       624
+        weighted avg       0.91     0.91    0.91       624
         ```
         """)
 
         # Model Architecture
         st.subheader("Model Architecture:")
         st.write("""
-        The Convolutional Neural Network (CNN) architecture consists of four convolutional layers followed by pooling layers. After the convolutional layers, there are three fully connected layers with a dropout layer in between to prevent overfitting. The model outputs two classes: 'Normal' and 'Pneumonia'. This architecture was trained using a batch size of 64, learning rate of 0.001, and for a total of 12 epochs. The training and validation accuracy achieved is displayed in the provided plots.
+        The Convolutional Neural Network (CNN) architecture consists of four convolutional layers followed by pooling layers. After the convolutional layers, there are three fully connected layers with a dropout layer in between to prevent overfitting. The model outputs two classes: 'Normal' and 'Pneumonia'. This architecture was trained using a batch size of 64, learning rate of 0.001, and for a total of 10 epochs. The training and validation accuracy achieved is displayed in the provided plots.
         """)
         plot_image("validation_train accuracy.png", "Validation-Train Accuracy")
         plot_image("validation_train loss.png", "Validation-Train Loss")
